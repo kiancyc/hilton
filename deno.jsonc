@@ -1,0 +1,6 @@
+{
+    "tasks": {
+        "dev": "deno run --allow-all --watch index.ts",
+        "test": "deno run --allow-all --watch --config ./tsconfig.json index.ts"
+    }
+}
