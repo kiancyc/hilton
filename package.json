@@ -1,0 +1,38 @@
+{
+  "name": "hilton",
+  "version": "1.0.0",
+  "description": "Windows (PowerShell)",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "node --no-warnings index.js",
+    "start": "node --no-warnings index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiancyc/hilton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiancyc/hilton/issues"
+  },
+  "homepage": "https://github.com/kiancyc/hilton#readme",
+  "dependencies": {
+    "check-env": "^1.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "express-basic-auth": "^1.2.1",
+    "express-graphql": "^0.12.0",
+    "express-history-api-fallback": "^2.2.1",
+    "express-joi-simple": "^1.0.7",
+    "mongoose": "^7.6.1",
+    "superagent": "^8.1.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

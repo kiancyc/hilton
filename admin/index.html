@@ -37,23 +37,23 @@
 </body>
 
 <script>
-    Vue.component('block-header', httpVueLoader('/block-header.vue'))
+    Vue.component('block-header', httpVueLoader('block-header.vue'))
 
     const router = new VueRouter({
         mode: 'history',
         routes: [{
-            path: '/',
-            component: httpVueLoader('/page-home.vue')
-        }, {
-            path: '/reserve',
-            component: httpVueLoader('/page-reserve.vue')
-        }, {
-            path: '/my',
-            component: httpVueLoader('/page-my.vue')
-        }, {
-            path: '/update',
-            component: httpVueLoader('/page-update.vue')
-        }]
+                path: '/',
+                component: httpVueLoader('/page-home.vue')
+            },
+            {
+                path: '/admin/reservation',
+                component: httpVueLoader('/admin/page-reservation-list.vue')
+            },
+            {
+                path: '/admin/reservation-detail',
+                component: httpVueLoader('/admin/page-reservation-detail.vue')
+            }
+        ]
     })
 
     new Vue({
